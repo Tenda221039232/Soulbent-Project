@@ -1,802 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soulbent Project — Community Environmental NPO</title>
+    <title>Soulbent Project — Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
 
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
     <!-- ===== HEADER ===== -->
     <header>
-      <div class="container header-inner">
-        <div class="logo">
-          <i class="fas fa-seedling"></i>
-          Soulbent<span>Project</span>
+        <div class="container header-inner">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                Soulbent<span>Project</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="programs.html">What We Do</a>
+                <a href="where.html">Where We Work</a>
+                <a href="get-involved.html">Get Involved</a>
+                <a href="donate.html" class="nav-cta">Donate</a>
+            </nav>
         </div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <nav id="nav">
-          <a href="#about">About</a>
-          <a href="#programs">What We Do</a>
-          <a href="#where">Where We Work</a>
-          <a href="#involved">Get Involved</a>
-          <a href="#donate" class="nav-cta">Donate</a>
-        </nav>
-      </div>
     </header>
 
     <!-- ===== HERO ===== -->
     <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Turning <span>waste</span> into <span>dignity</span></h1>
-          <p>
-            Community-driven environmental action in Saulsville and beyond. Over
-            220 clean-ups, food gardens, and a movement of hundreds of
-            volunteers.
-          </p>
-          <div style="display: flex; flex-wrap: wrap; gap: 12px">
-            <a href="#involved" class="btn btn-gold">Volunteer with us</a>
-            <a href="#donate" class="btn btn-white">Support our work</a>
-          </div>
-          <div class="hero-badges">
-            <div class="badge">
-              <i class="fas fa-leaf"></i>
-              <div>220+ <small>clean-ups this year</small></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Turning <span>waste</span> into <span>dignity</span></h1>
+                <p>
+                    Community-driven environmental action in Saulsville and beyond.
+                    Over 220 clean-ups, food gardens, and a movement of hundreds of volunteers.
+                </p>
+                <div style="display:flex; flex-wrap:wrap; gap:12px;">
+                    <a href="get-involved.html" class="btn btn-gold">Volunteer with us</a>
+                    <a href="donate.html" class="btn btn-white">Support our work</a>
+                </div>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <i class="fas fa-leaf"></i>
+                        <div>220+ <small>clean-ups this year</small></div>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-people-group"></i>
+                        <div>1,000+ <small>families supported</small></div>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-tree"></i>
+                        <div>10+ <small>food gardens planted</small></div>
+                    </div>
+                </div>
             </div>
-            <div class="badge">
-              <i class="fas fa-people-group"></i>
-              <div>1,000+ <small>families supported</small></div>
+            <div class="hero-image">
+                <i class="fas fa-image"></i>
+                <div>
+                    <strong>Hero image suggestion:</strong><br />
+                    A vibrant photo of Soulbent volunteers in action — cleaning a riverbank, planting a garden, or a group shot with gloves and bags, smiling.
+                    <br /><small style="opacity:0.6;">(Ask Mashudu for high-res hero shot)</small>
+                </div>
             </div>
-            <div class="badge">
-              <i class="fas fa-tree"></i>
-              <div>10+ <small>food gardens planted</small></div>
-            </div>
-          </div>
         </div>
-        <div class="hero-image">
-          <i class="fas fa-image"></i>
-          <div>
-            <strong>Hero image suggestion:</strong><br />
-            A vibrant photo of Soulbent volunteers in action — cleaning a
-            riverbank, planting a garden, or a group shot with gloves and bags,
-            smiling. Warm, golden-hour light. <br />
-            <small style="opacity: 0.6"
-              >(Ask Mashudu for high-res hero shot)</small
-            >
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- ===== STATS ===== -->
     <section class="stats">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="number">220+</div>
-            <div class="label">Clean-up operations in a single year</div>
-          </div>
-          <div class="stat-item">
-            <div class="number">1,000</div>
-            <div class="label">
-              Families reached via soup kitchen &amp; food relief
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="number">220+</div>
+                    <div class="label">Clean-up operations in a single year</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">1,000</div>
+                    <div class="label">Families reached via soup kitchen &amp; food relief</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">6</div>
+                    <div class="label">Programme areas from clean-ups to food gardens</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">2007</div>
+                    <div class="label">Founded as a small family effort <span style="font-size:0.7rem; display:block; opacity:0.6;">(confirm exact year)</span></div>
+                </div>
             </div>
-          </div>
-          <div class="stat-item">
-            <div class="number">6</div>
-            <div class="label">
-              Programme areas from clean-ups to food gardens
-            </div>
-          </div>
-          <div class="stat-item">
-            <div class="number">2007</div>
-            <div class="label">
-              Founded as a small family effort
-              <span style="font-size: 0.7rem; display: block; opacity: 0.6"
-                >(confirm exact year)</span
-              >
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-text">
-            <h2 class="section-title">About <span>Soulbent</span></h2>
-            <p style="margin-bottom: 12px">
-              <strong>Soulbent Project</strong> is a registered community-driven
-              environmental NPO based in Saulsville, Atteridgeville, Pretoria.
-              Founded by siblings <strong>Mashudu Makhado</strong>,
-              <strong>Millicent Makhado</strong>, and the late
-              <strong>Tshifhiwa Makhado</strong>, it began as a small family
-              effort and has grown into a movement of hundreds of residents.
-            </p>
-            <blockquote>
-              “As residents, we realised that waiting for change was not enough,
-              we had to become the change.”
-              <cite>— Mashudu Makhado, CEO &amp; Co-founder</cite>
-            </blockquote>
-            <p>
-              Soulbent tackles illegal dumping, river pollution, and food
-              insecurity through hands-on clean-ups, recycling, and food gardens
-              that turn reclaimed dumpsites into sources of fresh produce for
-              the community.
-            </p>
-            <span class="npo-badge"
-              ><i class="fas fa-check-circle"></i> NPO #073760</span
-            >
-            <div style="margin-top: 16px">
-              <a href="#involved" class="btn btn-primary">Join the movement</a>
-            </div>
-          </div>
-          <div class="about-image">
-            <i class="fas fa-users"></i>
-            <div>
-              <strong>Image suggestion:</strong><br />
-              A photo of Mashudu, Millicent, and volunteers at a clean-up site —
-              or a portrait of the founding siblings together. Warm,
-              community-focused.
-              <br /><small>(Use with permission from Mashudu)</small>
-            </div>
-          </div>
+    <!-- ===== QUICK PREVIEW OF PROGRAMS ===== -->
+    <section style="background:var(--cream); padding:60px 0;">
+        <div class="container text-center">
+            <h2 class="section-title">Our <span>Work</span></h2>
+            <p class="section-sub mx-auto">From clean-ups to food gardens — we tackle environmental and social challenges together.</p>
+            <a href="programs.html" class="btn btn-primary">See all programmes <i class="fas fa-arrow-right"></i></a>
         </div>
-      </div>
-    </section>
-
-    <!-- ===== WHAT WE DO ===== -->
-    <section id="programs" class="programs">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-title">What <span>We Do</span></h2>
-          <p class="section-sub mx-auto">
-            Six core programmes that turn environmental action into community
-            transformation.
-          </p>
-        </div>
-        <div class="programs-grid">
-          <!-- 1 -->
-          <div class="program-card">
-            <div class="icon"><i class="fas fa-trash-alt"></i></div>
-            <h3>Illegal Dumping Clean-ups</h3>
-            <p>
-              Regular clean-ups across Saulsville, Atteridgeville, Soweto, and
-              beyond.
-            </p>
-            <div class="img-placeholder">
-              <i class="fas fa-image"></i> Volunteers removing waste from a
-              dumpsite
-            </div>
-          </div>
-          <!-- 2 -->
-          <div class="program-card">
-            <div class="icon"><i class="fas fa-water"></i></div>
-            <h3>River &amp; Wetland Clean-ups</h3>
-            <p>
-              Monangwe river and other waterways restored with 80+ volunteers
-              per event.
-            </p>
-            <div class="img-placeholder">
-              <i class="fas fa-image"></i> Team in waders clearing river
-              pollution
-            </div>
-          </div>
-          <!-- 3 -->
-          <div class="program-card">
-            <div class="icon"><i class="fas fa-tree"></i></div>
-            <h3>Cemetery Restoration</h3>
-            <p>
-              Saulsville Cemetery and other resting places cleaned and restored
-              with dignity.
-            </p>
-            <div class="img-placeholder">
-              <i class="fas fa-image"></i> Volunteers tidying a cemetery section
-            </div>
-          </div>
-          <!-- 4 -->
-          <div class="program-card">
-            <div class="icon"><i class="fas fa-carrot"></i></div>
-            <h3>Food Gardens</h3>
-            <p>
-              Spinach, carrots, onions, tomatoes — grown on reclaimed land for
-              food security.
-            </p>
-            <div class="img-placeholder">
-              <i class="fas fa-image"></i> Lush vegetable beds with volunteers
-              harvesting
-            </div>
-          </div>
-          <!-- 5 -->
-          <div class="program-card">
-            <div class="icon"><i class="fas fa-utensils"></i></div>
-            <h3>Soup Kitchen &amp; Food Relief</h3>
-            <p>
-              Meals for school children, food vouchers, and parcels for ~1,000
-              families.
-            </p>
-            <div class="img-placeholder">
-              <i class="fas fa-image"></i> Community members receiving meals
-            </div>
-          </div>
-          <!-- 6 -->
-          <div class="program-card">
-            <div class="icon"><i class="fas fa-recycle"></i></div>
-            <h3>Recycling &amp; Awareness</h3>
-            <p>
-              PET bottle collection, anti-littering campaigns, and anti-bullying
-              education.
-            </p>
-            <div class="img-placeholder">
-              <i class="fas fa-image"></i> Bales of recycled PET bottles
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== WHERE WE WORK ===== -->
-    <section id="where">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-title">Where <span>We Work</span></h2>
-          <p class="section-sub mx-auto">
-            Operating across Gauteng, from our home base in Saulsville to
-            growing partnerships in Soweto and beyond.
-          </p>
-        </div>
-        <div class="where-grid">
-          <div class="where-item">
-            <i class="fas fa-location-dot"></i> Saulsville
-          </div>
-          <div class="where-item">
-            <i class="fas fa-location-dot"></i> Atteridgeville
-          </div>
-          <div class="where-item">
-            <i class="fas fa-location-dot"></i> Mamelodi
-          </div>
-          <div class="where-item">
-            <i class="fas fa-location-dot"></i> Soweto
-          </div>
-          <div class="where-item">
-            <i class="fas fa-location-dot"></i> Honeydew
-          </div>
-          <div class="where-item">
-            <i class="fas fa-location-dot"></i> Ratanda
-          </div>
-          <div class="where-item">
-            <i class="fas fa-location-dot"></i> Sebokeng
-          </div>
-          <div class="where-item">
-            <i class="fas fa-location-dot"></i> Pretoria (various)
-          </div>
-        </div>
-        <div
-          style="
-            margin-top: 32px;
-            background: var(--stone);
-            padding: 20px 24px;
-            border-radius: var(--radius);
-            text-align: center;
-          "
-        >
-          <p style="font-weight: 500; color: var(--green-dark)">
-            <i class="fas fa-map-pin" style="color: var(--gold)"></i>
-            Physical address:
-            <strong>37 Mohlatswa Street, Saulsville, Pretoria</strong>
-            <span
-              style="
-                display: block;
-                font-weight: 400;
-                font-size: 0.85rem;
-                color: var(--text-mid);
-                margin-top: 4px;
-              "
-            >
-              (confirm exact current address with Mashudu)
-            </span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== GET INVOLVED ===== -->
-    <section id="involved" class="involved">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-title">Get <span>Involved</span></h2>
-          <p class="section-sub mx-auto">
-            Join the movement. Whether you volunteer, donate equipment, or
-            partner with us — every hand makes a difference.
-          </p>
-        </div>
-        <div class="involved-grid">
-          <div>
-            <h3
-              style="
-                font-size: 1.3rem;
-                color: var(--green-dark);
-                margin-bottom: 12px;
-              "
-            >
-              <i
-                class="fas fa-hand-holding-heart"
-                style="color: var(--gold)"
-              ></i>
-              Ways to help
-            </h3>
-            <ul class="involved-list">
-              <li>
-                <i class="fas fa-users"></i> Join weekly clean-ups (Mon–Fri,
-                multiple sites)
-              </li>
-              <li>
-                <i class="fas fa-tree"></i> Plant trees and help with food
-                gardens
-              </li>
-              <li>
-                <i class="fas fa-truck"></i> Donate equipment: bags, gloves,
-                spades, wheelbarrows
-              </li>
-              <li>
-                <i class="fas fa-bottle-water"></i> Supply mineral water for
-                volunteers
-              </li>
-              <li>
-                <i class="fas fa-first-aid"></i> Contribute to a medical aid kit
-              </li>
-              <li>
-                <i class="fas fa-car"></i> Sponsor transport or a branded
-                awareness vehicle
-              </li>
-              <li>
-                <i class="fas fa-handshake"></i> Partner as a corporate or
-                foundation supporter
-              </li>
-            </ul>
-            <div
-              style="
-                margin-top: 20px;
-                background: var(--gold-light);
-                padding: 16px 20px;
-                border-radius: var(--radius);
-              "
-            >
-              <p style="font-weight: 600; color: var(--green-dark)">
-                <i class="fas fa-phone" style="color: var(--gold)"></i>
-                Call us: <strong>078 914 1806</strong>
-                <span
-                  style="
-                    display: block;
-                    font-weight: 400;
-                    font-size: 0.9rem;
-                    color: var(--text-mid);
-                  "
-                >
-                  (confirm current number with Mashudu)
-                </span>
-              </p>
-            </div>
-          </div>
-          <div class="volunteer-form">
-            <h3 style="color: var(--green-dark); margin-bottom: 12px">
-              <i class="fas fa-pen-to-square"></i> Volunteer sign-up
-            </h3>
-            <form id="volunteerForm">
-              <input type="text" placeholder="Your full name" required />
-              <input type="email" placeholder="Email address" required />
-              <input type="tel" placeholder="Phone number" />
-              <textarea
-                placeholder="Tell us how you'd like to help (clean-ups, gardening, skills, etc.)"
-              ></textarea>
-              <button type="submit" class="btn btn-primary" style="width: 100%">
-                <i class="fas fa-paper-plane"></i> Send interest
-              </button>
-            </form>
-            <p
-              style="
-                font-size: 0.85rem;
-                color: var(--text-mid);
-                margin-top: 12px;
-              "
-            >
-              We'll reach out with upcoming volunteer opportunities.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== DONATE ===== -->
-    <section id="donate" class="donate">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-title">
-            Support <span style="color: var(--gold)">Our Work</span>
-          </h2>
-          <p
-            class="section-sub mx-auto"
-            style="color: rgba(255, 255, 255, 0.8)"
-          >
-            Every donation helps us clean, feed, and restore dignity in our
-            communities.
-          </p>
-        </div>
-        <div class="donate-grid">
-          <div class="donate-card">
-            <h3>
-              <i class="fas fa-heart" style="color: var(--gold)"></i> Make a
-              donation
-            </h3>
-            <p style="margin-bottom: 16px">
-              Your contribution goes directly to clean-up operations, food
-              gardens, soup kitchen meals, and essential equipment.
-            </p>
-            <ul>
-              <li><i class="fas fa-check-circle"></i> EFT / bank transfer</li>
-              <li>
-                <i class="fas fa-check-circle"></i> SnapScan / mobile payment
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Monthly giving options
-              </li>
-            </ul>
-            <p
-              style="
-                margin-top: 16px;
-                font-size: 0.9rem;
-                background: rgba(255, 255, 255, 0.06);
-                padding: 12px;
-                border-radius: 8px;
-              "
-            >
-              <strong>Banking details:</strong> Confirm with Mashudu before
-              publishing.
-            </p>
-            <a href="#" class="btn btn-gold" style="display: inline-block">
-              <i class="fas fa-arrow-right"></i> Donate now
-            </a>
-            <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 10px">
-              Soulbent Project NPO #073760 • Section 18A tax certificates
-              available
-            </p>
-          </div>
-          <div class="donate-card">
-            <h3>
-              <i class="fas fa-clipboard-list" style="color: var(--gold)"></i>
-              Current needs
-            </h3>
-            <p>We urgently need these items for our ongoing work:</p>
-            <div class="wishlist-grid">
-              <span><i class="fas fa-bag-shopping"></i> Plastic bags</span>
-              <span><i class="fas fa-hand"></i> Gloves</span>
-              <span><i class="fas fa-broom"></i> Cleaning tools</span>
-              <span><i class="fas fa-wheelbarrow"></i> Wheelbarrows</span>
-              <span><i class="fas fa-shovel"></i> Shovels &amp; spades</span>
-              <span><i class="fas fa-hat-cowboy"></i> Sun hats</span>
-              <span><i class="fas fa-bottle-water"></i> Mineral water</span>
-              <span><i class="fas fa-kit-medical"></i> Medical aid kit</span>
-              <span
-                ><i class="fas fa-truck-fast"></i> Transport / branded
-                vehicle</span
-              >
-              <span><i class="fas fa-utensils"></i> Food for soup kitchen</span>
-            </div>
-            <p style="margin-top: 16px; font-size: 0.9rem">
-              <i class="fas fa-envelope" style="color: var(--gold)"></i>
-              To donate items, contact us directly.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== NEWS & MEDIA ===== -->
-    <section id="news">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-title">In the <span>News</span></h2>
-          <p class="section-sub mx-auto">
-            Soulbent has been featured in national and local media for its
-            transformative community work.
-          </p>
-        </div>
-        <div class="news-grid">
-          <div class="news-card">
-            <div class="source">Daily Maverick</div>
-            <h4>
-              “A Pretoria community finds a way to clean up the environment and
-              feed people”
-            </h4>
-            <p>
-              Jul 2022 — Feature on the integrated clean-up and food garden
-              model.
-            </p>
-            <span class="date"><i class="far fa-calendar"></i> July 2022</span>
-          </div>
-          <div class="news-card">
-            <div class="source">Good Things Guy</div>
-            <h4>
-              “Cleanup Heroes Work to Restore Dignity to Pretoria's Resting
-              Places”
-            </h4>
-            <p>
-              Mar 2026 — Saulsville Cemetery restoration and community impact.
-            </p>
-            <span class="date"><i class="far fa-calendar"></i> March 2026</span>
-          </div>
-          <div class="news-card">
-            <div class="source">GroundUp / allAfrica</div>
-            <h4>
-              “Soweto volunteers clean streets as illegal dumping overwhelms
-              Gauteng”
-            </h4>
-            <p>Mar 2026 — Expansion into Soweto with daily clean-ups.</p>
-            <span class="date"><i class="far fa-calendar"></i> March 2026</span>
-          </div>
-          <div class="news-card">
-            <div class="source">Rekord / Citizen</div>
-            <h4>“Local NPO use clean-ups to fight bullying”</h4>
-            <p>
-              Nov 2024 — Connecting environmental work with anti-bullying
-              awareness.
-            </p>
-            <span class="date"
-              ><i class="far fa-calendar"></i> November 2024</span
-            >
-          </div>
-          <div class="news-card">
-            <div class="source">IOL Pretoria News</div>
-            <h4>
-              “Volunteers restore soul of city river, hope to raise awareness”
-            </h4>
-            <p>Mar 2024 — Monangwe river clean-up with 80+ volunteers.</p>
-            <span class="date"><i class="far fa-calendar"></i> March 2024</span>
-          </div>
-          <div class="news-card">
-            <div class="source">Good Things Guy</div>
-            <h4>
-              “Man Creates Business that Specialises in Cleaning Illegal Dumping
-              Sites”
-            </h4>
-            <p>Mar 2022 — Early feature on Mashudu Makhado's vision.</p>
-            <span class="date"><i class="far fa-calendar"></i> March 2022</span>
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 30px">
-          <a
-            href="#"
-            class="btn btn-secondary"
-            style="border-color: var(--gold); color: var(--gold)"
-          >
-            <i class="fas fa-newspaper"></i> See all media coverage
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-title">Get in <span>Touch</span></h2>
-          <p class="section-sub mx-auto">
-            Have questions, want to partner, or need more information? Reach out
-            to us.
-          </p>
-        </div>
-        <div class="contact-grid">
-          <div>
-            <h3 style="color: var(--green-dark); margin-bottom: 16px">
-              <i class="fas fa-address-card"></i> Contact details
-            </h3>
-            <div class="contact-details">
-              <p>
-                <i class="fas fa-map-pin"></i> 37 Mohlatswa Street, Saulsville,
-                Pretoria
-              </p>
-              <p>
-                <i class="fas fa-phone"></i> 078 914 1806
-                <span style="font-size: 0.8rem; opacity: 0.6"
-                  >(confirm current)</span
-                >
-              </p>
-              <p>
-                <i class="fas fa-envelope"></i> info@soulbent.org.za
-                <span style="font-size: 0.8rem; opacity: 0.6"
-                  >(confirm with Mashudu)</span
-                >
-              </p>
-              <p>
-                <i class="fas fa-globe"></i> www.Soulbent.org.za
-                <span style="font-size: 0.8rem; opacity: 0.6"
-                  >(verify domain ownership)</span
-                >
-              </p>
-            </div>
-            <div class="social-links">
-              <a
-                href="https://facebook.com/Soulbentprojectrecycling/"
-                target="_blank"
-                aria-label="Facebook"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                href="https://twitter.com/SoulbentProject"
-                target="_blank"
-                aria-label="X / Twitter"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                href="https://tiktok.com/@soulbent_project"
-                target="_blank"
-                aria-label="TikTok"
-                ><i class="fab fa-tiktok"></i
-              ></a>
-              <a href="#" target="_blank" aria-label="YouTube"
-                ><i class="fab fa-youtube"></i
-              ></a>
-            </div>
-            <div
-              style="
-                margin-top: 24px;
-                background: var(--green-pale);
-                padding: 16px 20px;
-                border-radius: var(--radius);
-              "
-            >
-              <p style="font-size: 0.9rem; color: var(--green-dark)">
-                <i class="fas fa-info-circle" style="color: var(--gold)"></i>
-                <strong>NPO #073760</strong> — Registered non-profit
-                organisation. All donations are tax-deductible (Section 18A).
-              </p>
-            </div>
-          </div>
-          <div>
-            <h3 style="color: var(--green-dark); margin-bottom: 16px">
-              <i class="fas fa-paper-plane"></i> Send a message
-            </h3>
-            <form class="contact-form" id="contactForm">
-              <input type="text" placeholder="Your name" required />
-              <input type="email" placeholder="Email address" required />
-              <input type="text" placeholder="Subject" />
-              <textarea placeholder="Your message…"></textarea>
-              <button type="submit" class="btn btn-primary" style="width: 100%">
-                <i class="fas fa-envelope"></i> Send message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <div class="logo" style="color: var(--white)">
-              <i class="fas fa-seedling"></i>
-              Soulbent<span style="color: var(--gold)">Project</span>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="color:var(--white);">
+                        <i class="fas fa-seedling"></i>
+                        Soulbent<span style="color:var(--gold);">Project</span>
+                    </div>
+                    <p style="margin-top:10px;">Community-driven environmental action — turning waste into dignity since 2007.</p>
+                    <p style="margin-top:6px; font-size:0.85rem;"><i class="fas fa-check-circle" style="color:var(--gold);"></i> NPO #073760</p>
+                </div>
+                <div>
+                    <h4>Quick links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">What We Do</a></li>
+                        <li><a href="where.html">Where We Work</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://facebook.com/Soulbentprojectrecycling/" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/SoulbentProject" target="_blank">X / Twitter</a></li>
+                        <li><a href="https://tiktok.com/@soulbent_project" target="_blank">TikTok</a></li>
+                        <li><a href="#" target="_blank">YouTube</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <p style="margin-top: 10px">
-              Community-driven environmental action — turning waste into dignity
-              since 2007.
-            </p>
-            <p style="margin-top: 6px; font-size: 0.85rem">
-              <i class="fas fa-check-circle" style="color: var(--gold)"></i> NPO
-              #073760
-            </p>
-          </div>
-          <div>
-            <h4>Quick links</h4>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#programs">What We Do</a></li>
-              <li><a href="#where">Where We Work</a></li>
-              <li><a href="#involved">Get Involved</a></li>
-              <li><a href="#donate">Donate</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Connect</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://facebook.com/Soulbentprojectrecycling/"
-                  target="_blank"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a href="https://twitter.com/SoulbentProject" target="_blank"
-                  >X / Twitter</a
-                >
-              </li>
-              <li>
-                <a href="https://tiktok.com/@soulbent_project" target="_blank"
-                  >TikTok</a
-                >
-              </li>
-              <li><a href="#" target="_blank">YouTube</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+            <div class="footer-bottom">
+                &copy; 2026 Soulbent Project NPO. All rights reserved. &nbsp;|&nbsp;
+                Built with <i class="fas fa-heart" style="color:var(--gold);"></i> for community.
+            </div>
         </div>
-        <div class="footer-bottom">
-          &copy; 2026 Soulbent Project NPO. All rights reserved. &nbsp;|&nbsp;
-          Built with <i class="fas fa-heart" style="color: var(--gold)"></i> for
-          community.
-        </div>
-      </div>
     </footer>
 
-    <!-- ===== JAVASCRIPT ===== -->
-    <script>
-      // Hamburger toggle
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("nav");
-
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.innerHTML = nav.classList.contains("open")
-          ? '<i class="fas fa-times"></i>'
-          : '<i class="fas fa-bars"></i>';
-      });
-
-      // Close nav on link click (mobile)
-      document.querySelectorAll("#nav a").forEach((link) => {
-        link.addEventListener("click", () => {
-          nav.classList.remove("open");
-          hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-        });
-      });
-
-      // Volunteer form submission
-      document
-        .getElementById("volunteerForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "Thank you for your interest in volunteering with Soulbent Project! We will contact you shortly.",
-          );
-          this.reset();
-        });
-
-      // Contact form submission
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "Your message has been sent. We'll get back to you as soon as possible.",
-          );
-          this.reset();
-        });
-
-      // Smooth scroll for anchor links (optional enhancement)
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          if (href === "#") return;
-          e.preventDefault();
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-          }
-        });
-      });
-    </script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
