@@ -344,23 +344,55 @@ section {
     color: var(--text-dark);
 }
 .about-image {
-    background: var(--green-pale);
+    position: relative;
     border-radius: var(--radius);
-    aspect-ratio: 4/3;
+    aspect-ratio: 4 / 3;
+    overflow: hidden; /* ensures image stays inside rounded corners */
+    background: var(--green-pale);
+    border: 2px dashed var(--green-light);
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--green-mid);
-    border: 2px dashed var(--green-light);
-    padding: 20px;
     text-align: center;
     gap: 12px;
+    transition: var(--transition);
 }
+
+
+
+.about-image:has(img) {
+    aspect-ratio: 3 / 3; /* taller, better for portraits */
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* focuses on the face, not the top of the hair */
+    display: block;
+}
+
+/* Optional: if you want a subtle overlay or shadow */
+.about-image:has(img)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+    pointer-events: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+/* Keep the icon/placeholder styles when no image */
 .about-image i {
     font-size: 3.4rem;
     color: var(--green-mid);
 }
+
 .about-image small {
     font-size: 0.85rem;
     opacity: 0.7;
@@ -791,4 +823,41 @@ footer {
     section {
         padding: 50px 0;
     }
+}
+/* Image placeholder — now with real image support */
+.img-placeholder {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    background: var(--green-pale);
+    border: 1px dashed var(--green-light);
+    margin-top: 16px;
+}
+
+.img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.img-placeholder .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 8px 14px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    backdrop-filter: blur(2px);
+    border-radius: 0 0 8px 8px;
+}
+
+.img-placeholder .caption i {
+    margin-right: 6px;
+    color: var(--gold);
 }
